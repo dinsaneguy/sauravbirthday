@@ -1,0 +1,250 @@
+/* General Styles
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  h1, h2 {
+    font-family: 'Pacifico', cursive;
+    color: #ff0066;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .vodka-img {
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  .vodka-caption {
+    font-size: 1.2em;
+    color: #ff0066;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: #ff0066;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background: #cc0052;
+  }
+
+  .bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+
+  .studies, .gaming {
+    background: #ff0066;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .alert {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff0066;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  #close-alert {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .card {
+    animation: fadeIn 1s ease-in-out;
+  } */
+
+  /* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('background.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.568);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1, h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #ff0066;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+  }
+  
+  .vodka-img {
+    width: 150px;
+    margin-top: 10px;
+    animation: bounce 2s infinite;
+  }
+  
+  .vodka-caption {
+    font-size: 1.2em;
+    color: #ff0066;
+  }
+  
+  .cta-button, #surprise-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff0066, #ff4d94);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 0, 102, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cta-button:hover, #surprise-btn:hover {
+    background: linear-gradient(135deg, #cc0052, #ff1a75);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 0, 102, 0.5);
+  }
+  
+  /* Progress Bar Section */
+  .bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+  
+  .studies, .gaming {
+    background: #ff0066;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    animation: growWidth 2s ease-in-out;
+  }
+  
+  /* Dismissible Alert */
+  .alert {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff0066;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  #close-alert {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes growWidth {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  .card {
+    animation: fadeIn 1s ease-in-out;
+  }

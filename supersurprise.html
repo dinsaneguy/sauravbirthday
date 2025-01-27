@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperSurprise 🎁</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>🎁 SuperSurprise: Python Programming Quiz! 🎁</h1>
+      <p>Let’s see how much you’ve been coding, Saurav! 😏</p>
+      <div class="quiz">
+        <div class="question">
+          <h3>1. What is the output of `print(2 ** 3)`?</h3>
+          <input type="text" id="q1" placeholder="Your answer">
+        </div>
+        <div class="question">
+          <h3>2. How do you create a list in Python?</h3>
+          <input type="text" id="q2" placeholder="Your answer">
+        </div>
+        <div class="question">
+          <h3>3. What does `len()` function do?</h3>
+          <input type="text" id="q3" placeholder="Your answer">
+        </div>
+        <button id="submit-quiz">Submit Answers</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dismissible Alert -->
+  <div id="alert" class="alert">
+    <span id="alert-message"></span>
+    <button id="close-alert"><i class="fas fa-times"></i></button>
+  </div>
+
+  <script>
+    document.getElementById('submit-quiz').addEventListener('click', function () {
+      const q1 = document.getElementById('q1').value;
+      const q2 = document.getElementById('q2').value;
+      const q3 = document.getElementById('q3').value;
+
+      if (q1 === "8" && q2 === "[]" && q3 === "Returns the length of an object") {
+        showAlert("🎉 Correct! You’re a Python pro, Saurav! 🎉");
+      } else {
+        showAlert("❌ Wrong! Time to hit the books, buddy! 📚");
+      }
+    });
+
+    function showAlert(message) {
+      const alert = document.getElementById('alert');
+      const alertMessage = document.getElementById('alert-message');
+      alertMessage.textContent = message;
+      alert.style.display = 'flex';
+
+      setTimeout(() => {
+        alert.style.display = 'none';
+      }, 5000);
+    }
+
+    document.getElementById('close-alert').addEventListener('click', function () {
+      document.getElementById('alert').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
